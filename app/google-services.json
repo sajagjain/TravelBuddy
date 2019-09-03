@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "246519424086",
+    "firebase_url": "https://sajag-travel-buddy.firebaseio.com",
+    "project_id": "sajag-travel-buddy",
+    "storage_bucket": "sajag-travel-buddy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246519424086:android:cc84e46705764380",
+        "android_client_info": {
+          "package_name": "com.example.sajagjain.majorproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246519424086-q2nenl7h0o6fj2m7mmvt82qeut6faskr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sajagjain.majorproject",
+            "certificate_hash": "1659d0147e115db72846089b3ac2ff6066ef9412"
+          }
+        },
+        {
+          "client_id": "246519424086-r986l0pvhdnh9c9i15r4g4v46gvore9m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfV-j-q2wgS_4C9SmZ9ynSGQa2MqlpapQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246519424086-r986l0pvhdnh9c9i15r4g4v46gvore9m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246519424086:android:270f339396378427",
+        "android_client_info": {
+          "package_name": "com.sajagjain.sajagjain.majorproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246519424086-kdh9sicc3dk9t6dmvsvtlb4iraaj6rt9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sajagjain.sajagjain.majorproject",
+            "certificate_hash": "1659d0147e115db72846089b3ac2ff6066ef9412"
+          }
+        },
+        {
+          "client_id": "246519424086-r986l0pvhdnh9c9i15r4g4v46gvore9m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfV-j-q2wgS_4C9SmZ9ynSGQa2MqlpapQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246519424086-r986l0pvhdnh9c9i15r4g4v46gvore9m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

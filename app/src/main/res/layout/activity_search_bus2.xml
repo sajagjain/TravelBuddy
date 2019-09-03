@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sajagjain.sajagjain.majorproject.SearchActivityBus2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary" />
+
+        <com.miguelcatalan.materialsearchview.MaterialSearchView
+            android:id="@+id/searchview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            app:searchBackIcon="@drawable/ic_arrow_back_black_24dp"
+            app:searchBackground="@color/colorPrimary"
+            app:searchCloseIcon="@drawable/ic_close_black_24dp"
+            app:searchSuggestionBackground="@color/colorPrimary"
+            app:searchSuggestionIcon="@drawable/ic_suggestion" />
+    </RelativeLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView19"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:text="Near By"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/station_recycler_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Is It"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/listviewbus"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar1"
+        android:cacheColorHint="#00000000"
+        android:divider="#806326"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No results found." />
+
+
+</LinearLayout>

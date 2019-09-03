@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flight_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/shadow_boundary"
+    android:gravity="center_vertical"
+    android:minHeight="72dp"
+    android:orientation="horizontal"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.00"
+        app:srcCompat="@android:color/holo_blue_dark" />
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.00"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/flight_airline_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/flight_icon" />
+
+        <LinearLayout
+            android:id="@+id/flight_click_layout_left_horizontal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/business_class"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                app:srcCompat="@drawable/business_class" />
+
+            <ImageView
+                android:id="@+id/economy_class"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:foregroundTint="@android:color/holo_blue_light"
+                android:paddingTop="5dp"
+                app:srcCompat="@drawable/economy_class" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/flight_airline_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="Airline"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <ToggleButton
+            android:id="@+id/flight_save_that"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/save_that_deactivated"
+            android:onClick="onToggleClicked"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/flight_click_layout_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/rupee_sign"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:padding="5dp"
+                app:srcCompat="@drawable/rupee_iconn" />
+
+            <TextView
+                android:id="@+id/flight_price"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Flight Price"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/flight_warnings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:gravity="right"
+            android:padding="3dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="Refundable/Non-Refundable"
+            android:textColor="?attr/colorControlNormal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/kuchbhi"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="Duration"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/flight_duration"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="2"
+                android:padding="3dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/kuchbhi2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="Departure"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/flight_departure"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="2"
+                android:padding="3dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/kuchbhi3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="Arrival"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/flight_arrival"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="2"
+                android:padding="3dp"
+                android:paddingRight="10dp"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/kuchbhi36789"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="Seats Available"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/flight_seats_available"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="2"
+                android:padding="3dp"
+                android:paddingRight="10dp"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

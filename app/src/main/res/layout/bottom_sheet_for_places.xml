@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <TextView
+        android:id="@+id/bottom_sheet_for_places_add_to_plan_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimaryDark"
+        android:padding="2dp" />
+
+
+    <Switch
+        android:id="@+id/bottom_sheet_for_places_add_to_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:text="Add to Plan" />
+
+
+    <Switch
+        android:id="@+id/bottom_sheet_for_places_add_to_saved_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:text="Add to Saved Places" />
+
+    <Switch
+        android:id="@+id/bottom_sheet_for_places_add_to_bucket_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:text="Add to Bucket List" />
+
+    <Button
+        android:id="@+id/bottom_sheet_for_places_add_to_collections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Add To Collection"
+        android:textColor="#fff" />
+
+</LinearLayout>

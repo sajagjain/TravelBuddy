@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/single_res_vertical_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:background="@drawable/shadow_boundary"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/single_res_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/single_res_cuisines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Avg Cost For Two" />
+
+        <TextView
+            android:id="@+id/single_res_avg_price_for_two"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView46srt"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Ratings" />
+
+        <TextView
+            android:id="@+id/single_res_ratings"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/single_restaurant_save_that"
+        android:layout_width="30dp"
+        android:layout_margin="4dp"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:onClick="onToggleClicked"
+        android:textOff=""
+        android:textOn=""
+        android:background="@drawable/save_that_deactivated"
+        android:textSize="0dp"
+        />
+
+    <TextView
+        android:id="@+id/single_res_visit_zomato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Open Zomato"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

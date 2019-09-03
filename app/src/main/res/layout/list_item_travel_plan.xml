@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/travel_plan_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_boundary"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/travel_plan_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/plan_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/travel_plan_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text=""
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/travel_plan_save_plan_more_menu"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/plan_image"
+            app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/travel_plan_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/to_from"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/travel_plan_dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/to_from"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

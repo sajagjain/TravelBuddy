@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_places"
+            android:icon="@drawable/places24x24"
+            android:title="Places" />
+        <item
+            android:id="@+id/nav_my_bucket_list"
+            android:icon="@drawable/bucketlist24x24"
+            android:title="My Bucket List" />
+        <item
+            android:id="@+id/nav_my_saved_places"
+            android:icon="@drawable/myplaces24x24"
+            android:title="My Saved Places" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Communicate With Us">
+        <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/aboutus24x24"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/ic_call_black_24dp"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_share_app"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share App" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sajagjain.sajagjain.majorproject.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:animateLayoutChanges="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/shimla"
+                            android:layout_width="70dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="left"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/shimla_clip"
+                            app:civ_border_color="@color/colorPrimary"
+                            app:civ_border_width="2dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/goa"
+                            android:layout_width="70dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="left"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/goa_clip"
+                            app:civ_border_color="@color/colorPrimary"
+                            app:civ_border_width="2dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/delhi"
+                            android:layout_width="70dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="center|fill"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/delhi_clip"
+                            app:civ_border_color="@color/colorPrimary"
+                            app:civ_border_width="2dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/mumbai"
+                            android:layout_width="70dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/mumbai_clip"
+                            app:civ_border_color="@color/colorPrimary"
+                            app:civ_border_width="2dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/kerela"
+                            android:layout_width="70dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/kerela_clip"
+                            app:civ_border_color="@color/colorPrimary"
+                            app:civ_border_width="2dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/shimla1"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Shimla" />
+
+                        <TextView
+                            android:id="@+id/goa1"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Goa" />
+
+                        <TextView
+                            android:id="@+id/delhi1"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|fill"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Delhi" />
+
+                        <TextView
+                            android:id="@+id/mumbai1"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Mumbai" />
+
+                        <TextView
+                            android:id="@+id/kerela1"
+                            android:layout_width="74dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Kerela" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="30dp"
+                        android:text="Your Last Crush Is Not That Far Away"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/last_viewed_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/darjeeling" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/imageView14"-->
+                            <!--android:layout_width="10dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--app:srcCompat="@color/colorPrimary" />-->
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/last_viewed_place_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="17sp"
+                                android:text="DARJEELING" />
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal">-->
+
+                                <!--<ImageView-->
+                                    <!--android:id="@+id/imageView16"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:paddingBottom="5dp"-->
+                                    <!--app:srcCompat="@drawable/icon_flight" />-->
+
+                                <!--<ImageView-->
+                                    <!--android:id="@+id/imageView15"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:paddingBottom="5dp"-->
+                                    <!--app:srcCompat="@drawable/icon_train" />-->
+
+                                <!--<ImageView-->
+                                    <!--android:id="@+id/imageView17"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:paddingBottom="5dp"-->
+                                    <!--app:srcCompat="@drawable/icon_bus" />-->
+                            <!--</LinearLayout>-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal">-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/textView17"-->
+                                    <!--android:layout_width="25dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="left"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:paddingBottom="5dp"-->
+                                    <!--android:text="Flight" />-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/textView16"-->
+                                    <!--android:layout_width="25dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="center|fill"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:paddingBottom="5dp"-->
+                                    <!--android:text="Train" />-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/textView15"-->
+                                    <!--android:layout_width="25dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="right"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:paddingBottom="5dp"-->
+                                    <!--android:text="Bus" />-->
+                            <!--</LinearLayout>-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal">-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/last_viewed_flight_price"-->
+                                    <!--android:layout_width="58dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="left"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:paddingBottom="5dp"-->
+                                    <!--android:text="6500" />-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/last_viewed_train_price"-->
+                                    <!--android:layout_width="58dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="center"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:paddingBottom="5dp"-->
+                                    <!--android:text="2500" />-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/last_viewed_bus_price"-->
+                                    <!--android:layout_width="58dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_gravity="right"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:paddingBottom="5dp"-->
+                                    <!--android:text="1500" />-->
+                            <!--</LinearLayout>-->
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/last_viewed_more_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:gravity="center"
+                        android:text="More Detail's" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView26"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/travelplan" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="left"
+                            android:gravity="top|center"
+                            android:padding="40dp"
+                            android:singleLine="true"
+                            android:text="Travel Planning Assistance"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/travel_planning_assistance_start_button"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="88dp"
+                            android:background="@drawable/rounded_border_button"
+                            android:backgroundTint="@android:color/background_light"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Start Here" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

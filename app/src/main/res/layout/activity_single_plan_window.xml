@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/single_plan_window_coordinator_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    tools:context="com.sajagjain.sajagjain.majorproject.SinglePlanWindow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_google_signin_btn_text_dark_default">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/single_plan_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/single_plan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:shadowColor="@color/place_autocomplete_prediction_primary_text_highlight"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="10"
+            android:text="Greetings"
+            android:textColor="#ffffff"
+            android:textSize="50sp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_sheet_for_single_plan_window"/>
+</android.support.design.widget.CoordinatorLayout>
